@@ -1,10 +1,24 @@
 const films=[
-{title:"Ma zamm kroc'hen n'eo ket da werzhañ",year:"2022",type:"clip",role:"Réalisation · image · montage",url:"https://www.youtube.com/results?search_query=Ma+zamm+kroc%27hen+n%27eo+ket+da+werzhañ",g:"linear-gradient(125deg,#18231e,#756d48 48%,#111)"},
-{title:"The Friend",year:"2023",type:"clip",role:"Réalisation · image",url:"https://www.google.com/search?q=%22The+Friend%22+%22Miguel+de+Brito%22",g:"radial-gradient(circle at 68% 25%,#b9a66c,#3b2b24 35%,#090909 72%)"},
-{title:"Tuning Life",year:"2020",type:"fiction",role:"Coréalisation · image",url:"https://www.google.com/search?q=%22Tuning+Life%22+%22Miguel+de+Brito%22",g:"linear-gradient(145deg,#141414,#6b3e2e 45%,#0a0a0a)"},
-{title:"Near Love Experience",year:"2021",type:"fiction",role:"Réalisation",url:"https://www.google.com/search?q=%22Near+Love+Experience%22+%22Miguel+de+Brito%22",g:"radial-gradient(circle at 35% 40%,#76687f,#25232d 40%,#08090a 75%)"},
+{title:"Ma zamm kroc'hen n'eo ket da werzhañ",year:"2021",type:"fiction",role:"Co-réalisation · Morzhol Prod",url:"https://www.google.com/search?q=%22Ma+zamm+kroc%27hen+n%27eo+ket+da+werzhañ%22+Miguel+De+Brito",g:"linear-gradient(125deg,#18231e,#756d48 48%,#111)"},
+{title:"Tuning Life",year:"2020",type:"fiction",role:"Co-réalisation · image · Morzhol Prod",url:"https://www.google.com/search?q=%22Tuning+Life%22+%22Miguel+de+Brito%22",g:"linear-gradient(145deg,#141414,#6b3e2e 45%,#0a0a0a)"},
 {title:"Krogit",year:"2020",type:"fiction",role:"Image · son · montage",url:"https://kubweb.media/page/krogit-breton-klet-beyer-kaou-langot-morzhol-prod/",g:"linear-gradient(125deg,#25323a,#8d6d55 50%,#111)"},
-{title:"Cancre — Face au vent",year:"2020",type:"clip",role:"Cadreur",url:"https://www.google.com/search?q=%22Cancre%22+%22Face+au+vent%22+%22Miguel+de+Brito%22",g:"linear-gradient(135deg,#28363d,#b1a58b 42%,#0b0c0c)"},
-{title:"Le veilleur",year:"2017",type:"camera",role:"Camera · electrical",url:"https://www.imdb.com/name/nm9356202/",g:"radial-gradient(circle at 70% 65%,#c0a071,#343038 30%,#08090a 70%)"},
-{title:"Bandana",year:"—",type:"fiction",role:"Réalisation · image",url:"https://www.google.com/search?q=%22Bandana%22+%22Miguel+de+Brito%22",g:"linear-gradient(120deg,#3a2722,#b15b44 50%,#0a0a0a)"}];
-const grid=document.querySelector('#grid');function render(f='all'){let a=f==='all'?films:films.filter(x=>x.type===f||(f==='camera'&&x.role.toLowerCase().includes('cadreur')));grid.innerHTML=a.map(x=>'<a class="card" href="'+x.url+'" target="_blank" rel="noopener"><div class="thumb" style="--g:'+x.g+'"></div><div class="meta"><div class="type">'+x.type+' · '+x.year+'</div><h3>'+x.title+'</h3><p>'+x.role+'</p></div></a>').join('');document.querySelector('#count').textContent=a.length+' projets'}document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(b.dataset.filter)});render();
+{title:"Near Love Experience",year:"2021",type:"fiction",role:"Réalisation",url:"https://www.google.com/search?q=%22Near+Love+Experience%22+%22Miguel+de+Brito%22",g:"radial-gradient(circle at 35% 40%,#76687f,#25232d 40%,#08090a 75%)"},
+{title:"The Friend",year:"2023",type:"clip",role:"Clip · Meryem Aboulouafa",url:"https://www.google.com/search?q=%22The+Friend%22+%22Miguel+de+Brito%22+Meryem+Aboulouafa",g:"radial-gradient(circle at 68% 25%,#b9a66c,#3b2b24 35%,#090909 72%)"},
+{title:"Bandana",year:"—",type:"fiction",role:"Réalisation · Alexandre Faisy",url:"https://www.google.com/search?q=%22Bandana%22+%22Miguel+de+Brito%22+Alexandre+Faisy",g:"linear-gradient(120deg,#3a2722,#b15b44 50%,#0a0a0a)"},
+{title:"Cancre — Face au vent",year:"2020",type:"clip",role:"Image",url:"https://www.imdb.com/name/nm9356202/",g:"linear-gradient(135deg,#28363d,#b1a58b 42%,#0b0c0c)"},
+{title:"In the Water",year:"2019",type:"camera",role:"Directeur de la photographie",url:"https://www.imdb.com/name/nm9356202/",g:"radial-gradient(circle at 70% 65%,#5d7180,#343038 30%,#08090a 70%)"},
+{title:"Le veilleur",year:"2017",type:"camera",role:"Camera · electrical",url:"https://www.imdb.com/name/nm9356202/",g:"radial-gradient(circle at 70% 65%,#c0a071,#343038 30%,#08090a 70%)"}
+];
+
+const grid=document.querySelector('#grid');
+function render(f='all'){
+  const a=f==='all'?films:films.filter(x=>x.type===f);
+  grid.innerHTML=a.map(x=>'<a class="card" href="'+x.url+'" target="_blank" rel="noopener"><div class="thumb" style="--g:'+x.g+'"></div><div class="meta"><div class="type">'+x.type+' · '+x.year+'</div><h3>'+x.title+'</h3><p>'+x.role+'</p></div></a>').join('');
+  document.querySelector('#count').textContent=a.length+' projets';
+}
+document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  render(b.dataset.filter);
+});
+render();
