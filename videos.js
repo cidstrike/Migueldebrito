@@ -42,12 +42,6 @@ const VIDEOS = [
   "title": null
  },
  {
-  "id": "MZNhgt1znTY",
-  "p": "youtube",
-  "cat": "film",
-  "title": null
- },
- {
   "id": "Cr3tRdWQ4jM",
   "p": "youtube",
   "cat": "film",
@@ -55,18 +49,6 @@ const VIDEOS = [
  },
  {
   "id": "KUIVeWcThd0",
-  "p": "youtube",
-  "cat": "film",
-  "title": null
- },
- {
-  "id": "4fw9uO8dS7w",
-  "p": "youtube",
-  "cat": "film",
-  "title": null
- },
- {
-  "id": "ZIC4Fui9udw",
   "p": "youtube",
   "cat": "film",
   "title": null
@@ -91,12 +73,6 @@ const VIDEOS = [
  },
  {
   "id": "616934674",
-  "p": "vimeo",
-  "cat": "cam",
-  "title": null
- },
- {
-  "id": "613524721",
   "p": "vimeo",
   "cat": "cam",
   "title": null
@@ -252,6 +228,12 @@ const VIDEOS = [
   "title": null
  },
  {
+  "id": "ojstcnCVuGA",
+  "p": "youtube",
+  "cat": "clip",
+  "title": null
+ },
+ {
   "id": "M-OEx5LbB-Q",
   "p": "youtube",
   "cat": "clipx",
@@ -259,12 +241,6 @@ const VIDEOS = [
  },
  {
   "id": "W5XURO7HS-0",
-  "p": "youtube",
-  "cat": "clipx",
-  "title": null
- },
- {
-  "id": "frqeCRs7Fh0",
   "p": "youtube",
   "cat": "clipx",
   "title": null
@@ -312,12 +288,6 @@ const VIDEOS = [
   "title": null
  },
  {
-  "id": "9KGYTciM8ks",
-  "p": "youtube",
-  "cat": "clipx",
-  "title": null
- },
- {
   "id": "0xQpArffzjA",
   "p": "youtube",
   "cat": "teaser",
@@ -340,17 +310,5 @@ const VIDEOS = [
   "p": "youtube",
   "cat": "teaser",
   "title": "Le Goff — Palet breton"
- },
- {
-  "id": "BA_Kz7Sr_l4",
-  "p": "youtube",
-  "cat": "sel",
-  "title": null
- },
- {
-  "id": "ojstcnCVuGA",
-  "p": "youtube",
-  "cat": "sel",
-  "title": null
  }
 ];

@@ -8,11 +8,10 @@
     { cat: 'cam',    label: 'En tant que chef-opérateur', fallback: 'Image' },
     { cat: 'clip',   label: 'Clips officiels',            fallback: 'Clip' },
     { cat: 'clipx',  label: 'Clips non-officiels',        fallback: 'Clip' },
-    { cat: 'teaser', label: 'Teasers',                    fallback: 'Teaser' },
-    { cat: 'sel',    label: 'Sélection',                  fallback: 'Vidéo' }
+    { cat: 'teaser', label: 'Teasers',                    fallback: 'Teaser' }
   ];
   var FILTERS = {
-    all:    ['film', 'cam', 'clip', 'clipx', 'teaser', 'sel'],
+    all:    ['film', 'cam', 'clip', 'clipx', 'teaser'],
     film:   ['film'],
     cam:    ['cam'],
     clip:   ['clip', 'clipx'],
