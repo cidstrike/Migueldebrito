@@ -3,50 +3,86 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Miguel de Brito — réalisateur, cadreur, monteur. Fiction, clips et cinéma indépendant.">
-<title>Miguel de Brito — Réalisateur</title>
+<title>Miguel de Brito — Réalisateur, cadreur, monteur</title>
+<meta name="description" content="Miguel de Brito — réalisateur, chef-opérateur et monteur en Bretagne. Courts-métrages de fiction, clips, teasers et cinéma indépendant (Morzhol Prod).">
 <meta name="robots" content="index,follow">
+<meta name="theme-color" content="#08090a">
+<link rel="canonical" href="https://cidstrike.github.io/Migueldebrito/">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Miguel de Brito — Réalisateur">
+<meta property="og:description" content="Fiction, clips, teasers et cinéma indépendant. Des images étranges, humaines et sans frontières.">
+<meta property="og:url" content="https://cidstrike.github.io/Migueldebrito/">
+<meta property="og:image" content="https://cidstrike.github.io/Migueldebrito/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Miguel de Brito","jobTitle":"Réalisateur, chef-opérateur, monteur","url":"https://cidstrike.github.io/Migueldebrito/","sameAs":["https://www.instagram.com/miguel_de_brito_cinema/"],"telephone":"+33669282582","birthDate":"1990"}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="noise"></div>
+<a class="skip" href="#work">Aller au contenu</a>
+<div class="noise" aria-hidden="true"></div>
+
 <header class="nav">
-  <a class="logo" href="#top">MIGUEL<br><span>DE BRITO</span></a>
-  <nav><a href="#work">Films</a><a href="#about">À propos</a><a href="#contact">Contact</a></nav>
+  <a class="logo" href="#top" aria-label="Miguel de Brito — haut de page">
+    <img src="img/masque.png" alt="" width="34" height="34">
+    <span>MIGUEL<br><em>DE BRITO</em></span>
+  </a>
+  <nav aria-label="Navigation principale">
+    <a href="#work">Films</a>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main id="top">
 <section class="hero">
-  <div class="kicker">RÉALISATEUR · CADREUR · MONTEUR · PARIS / BRETAGNE</div>
+  <div class="kicker">RÉALISATEUR · CADREUR · MONTEUR · BRETAGNE</div>
   <h1>Je fabrique des<br><em>mondes</em> avec une caméra.</h1>
   <p>Fiction, clips, captations et cinéma indépendant.<br>Des images étranges, humaines et sans frontières.</p>
-  <a class="scroll" href="#work">↓ voir les films</a>
-  <i class="orb"></i>
+  <div class="hero-actions">
+    <a class="scroll" href="#work">↓ voir les films</a>
+    <button type="button" class="scroll alt" id="random">▶ une vidéo au hasard</button>
+  </div>
+  <i class="orb" aria-hidden="true"></i>
 </section>
 
 <section id="work" class="work">
-  <div class="head"><span>01 — FILMS</span><span id="count">Sélection</span></div>
-  <div class="filters">
-    <button class="active" data-filter="all">Tout</button>
-    <button data-filter="fiction">Fiction</button>
-    <button data-filter="clip">Clips</button>
-    <button data-filter="camera">Image</button>
+  <div class="head"><span>01 — FILMS</span><span id="count" aria-live="polite">Sélection</span></div>
+  <div class="filters" role="group" aria-label="Filtrer les vidéos">
+    <button type="button" class="active" data-filter="all" aria-pressed="true">Tout</button>
+    <button type="button" data-filter="film" aria-pressed="false">Films</button>
+    <button type="button" data-filter="cam" aria-pressed="false">Chef-opérateur</button>
+    <button type="button" data-filter="clip" aria-pressed="false">Clips</button>
+    <button type="button" data-filter="teaser" aria-pressed="false">Teasers</button>
   </div>
-  <div id="grid" class="grid"></div>
+  <div id="groups"></div>
+  <noscript><p class="noscript">Active JavaScript pour parcourir les films et les lire directement sur cette page.</p></noscript>
 </section>
 
 <section id="about" class="about">
   <div class="head"><span>02 — À PROPOS</span><span>Réalisation · Image · Montage</span></div>
   <div class="about-grid">
-    <p class="big">La caméra n’est qu’une machine.<br><i>Derrière, il y a l’œil, le corps, l’humain.</i></p>
+    <div>
+      <p class="big">La caméra n’est qu’une machine.<br><i>Derrière, il y a l’œil, le corps, l’humain.</i></p>
+      <img class="portrait" src="img/portrait.jpg" width="748" height="968" loading="lazy" alt="Silhouette d’un cadreur derrière sa caméra sur pied, à contre-jour devant un feu, de nuit">
+    </div>
     <div class="bio">
-      <p>Après un BTS Technicien audiovisuel à l’ESRA Rennes en 2012, je travaille comme cadreur, monteur et réalisateur sur des clips, des captations et des émissions TV.</p>
-      <p>En 2017, je découvre le mouvement Kino et participe à une quarantaine de tournages comme cadreur, monteur, assistant et réalisateur. Je crée ensuite Morzhol Prod pour produire des films en français et en breton.</p>
-      <p>Je suis aujourd’hui intermittent, principalement comme monteur et cadreur. Je développe aussi mes propres projets de fiction et souhaite me consacrer pleinement à la réalisation.</p>
-      <div class="tags"><span>RÉALISATION</span><span>CADRAGE</span><span>MONTAGE</span><span>FICTION</span><span>BRETAGNE</span><span>PARIS</span></div>
+      <p>Né en 1990, je suis depuis toujours obsédé par le mystère.</p>
+      <p>Après un BTS Technicien audiovisuel à l’ESRA Rennes en 2012, je travaille comme cadreur, monteur et réalisateur sur des clips, des captations et des émissions TV. En 2015, je suis une formation à la pré-écriture au Groupe Ouest.</p>
+      <p>En 2017, je découvre le mouvement Kino, un laboratoire de films courts : réunir professionnels et amateurs pour réaliser des films en quelques jours. Je participe ainsi à une quarantaine de tournages comme cadreur, monteur, assistant et réalisateur.</p>
+      <p>Cet élan me pousse à créer l’association Morzhol Prod avec mon compère acteur Kaou Langoët, pour produire des films en français et en breton. Des films jamais définis, oscillant entre humour noir, absurde, violence gratuite et aussi beaucoup d’amour.</p>
+      <p>Je suis aujourd’hui intermittent, principalement comme monteur et cadreur. J’aimerais désormais me consacrer pleinement à la réalisation et travailler dans le cinéma.</p>
+      <div class="tags"><span>RÉALISATION</span><span>CADRAGE</span><span>MONTAGE</span><span>FICTION</span><span>BRETAGNE</span></div>
       <a class="button" href="tel:+33669282582">06 69 28 25 82 ↗</a>
     </div>
   </div>
@@ -63,13 +99,30 @@
     <div>
       <p>Réalisation · image · montage<br>Fiction · clip · documentaire · captation</p>
       <a class="mail" href="tel:+33669282582">06 69 28 25 82 ↗</a>
-      <p class="contact-note">Paris / Bretagne</p>
+      <p class="social">
+        <a href="https://www.instagram.com/miguel_de_brito_cinema/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.facebook.com/serge.magnolia.7/" target="_blank" rel="noopener">Facebook ↗</a>
+      </p>
+      <p class="contact-note">Bretagne</p>
     </div>
   </div>
 </section>
 </main>
 
-<footer><span>© Miguel de Brito</span><span>Paris — Bretagne</span><a href="#top">↑ haut</a></footer>
+<footer><span>© Miguel de Brito</span><span>Bretagne</span><a href="#top">↑ haut</a></footer>
+
+<dialog id="player" aria-label="Lecteur vidéo">
+  <div class="player-bar">
+    <h2 id="player-title"></h2>
+    <button type="button" class="p-btn" id="p-prev" aria-label="Vidéo précédente">←</button>
+    <button type="button" class="p-btn" id="p-next" aria-label="Vidéo suivante">→</button>
+    <button type="button" class="p-btn" id="p-close" aria-label="Fermer">✕</button>
+  </div>
+  <div class="player-frame" id="player-frame"></div>
+  <a class="player-ext" id="player-ext" target="_blank" rel="noopener">Ouvrir sur la plateforme ↗</a>
+</dialog>
+
+<script src="videos.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

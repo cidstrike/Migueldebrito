@@ -1,17 +1,21 @@
 # Miguel de Brito — portfolio
 
-Version statique du portfolio, pensée pour être hébergée gratuitement avec GitHub Pages.
+Portfolio statique hébergé gratuitement avec GitHub Pages (branche `main`, dossier racine).
 
 ## Structure
-- `index.html` — contenu et sections
+- `index.html` — contenu et sections (films, à propos, contact)
 - `style.css` — design responsive
-- `script.js` — galerie vidéo
-- Les miniatures YouTube sont chargées depuis YouTube et les vidéos s'ouvrent sur leur page officielle.
+- `script.js` — galerie, filtres et lecteur vidéo intégré
+- `videos.js` — **la liste des vidéos** (YouTube / Vimeo)
+- `img/` — logo, portrait, miniatures Vimeo, image de partage
 
-## Publication
-Le dépôt peut être publié avec GitHub Pages depuis la branche `main`, dossier racine.
+## Ajouter ou corriger une vidéo
+Tout se passe dans `videos.js`. Une entrée :
 
-## À personnaliser
-- Remplacer le lien CV dans `index.html`.
-- Remplacer le numéro de téléphone si nécessaire.
-- Dans `script.js`, remplacer les titres génériques « Film 01 », « Clip 01 », etc. par les vrais titres.
+    { "id": "uQ2b_QZcBaM", "p": "youtube", "cat": "film", "title": "Je truc" }
+
+- `id` : l'identifiant YouTube (après `v=`) ou Vimeo (le nombre dans l'URL)
+- `p` : `"youtube"` ou `"vimeo"`
+- `cat` : `film`, `cam` (chef-opérateur), `clip`, `clipx` (clips non-officiels), `teaser`, `sel`
+- `title` : le titre affiché. Avec `null`, le site essaie de le récupérer en ligne
+- Miniature Vimeo : ajouter `img/vimeo/<id>.jpg` (les miniatures YouTube sont automatiques)
