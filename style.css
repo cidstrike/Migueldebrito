@@ -20,11 +20,13 @@ nav a,footer a{font:10px var(--mono);text-transform:uppercase;letter-spacing:.1e
 nav a:hover,footer a:hover{color:var(--acid)}
 
 /* hero */
-.hero{min-height:100vh;min-height:100svh;padding:180px 8vw 80px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero{padding:170px 8vw 56px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
 .kicker,.head{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-h1{font-size:clamp(50px,9vw,138px);line-height:.86;letter-spacing:-.075em;font-weight:600;margin:24px 0;max-width:1150px}
+h1{font-size:clamp(50px,7.6vw,116px);line-height:.86;letter-spacing:-.075em;font-weight:600;margin:24px 0;max-width:1150px}
 .hero em,.contact h2 em{font-family:Georgia,serif;font-weight:400}
-.hero p{color:#b9b7b0;line-height:1.6;font-size:15px;margin:25px 0 48px}
+.hero p{color:#b9b7b0;line-height:1.6;font-size:15px;margin:25px 0 0}
+.hero .hero-text{max-width:620px;margin:18px 0 0;font-size:14px;color:#9d9b94}
+.hero .hero-actions{margin-top:40px}
 .hero-actions{display:flex;gap:28px;flex-wrap:wrap;align-items:center;position:relative;z-index:1}
 .scroll{color:var(--fg);font:10px var(--mono);text-transform:uppercase;text-decoration:none;letter-spacing:.1em;background:none;border:0;padding:0;cursor:pointer}
 .scroll:hover{color:var(--acid)}
@@ -32,6 +34,14 @@ h1{font-size:clamp(50px,9vw,138px);line-height:.86;letter-spacing:-.075em;font-w
 
 /* sections */
 .work,.about,.contact{padding:125px 8vw}
+.work{padding-top:48px}
+
+/* showreel */
+.showreel{padding:0 8vw 20px;position:relative;z-index:1}
+.showreel-frame{aspect-ratio:16/9;background:#000;width:100%;max-width:1100px;border:1px solid var(--line)}
+.showreel-frame iframe{width:100%;height:100%;border:0;display:block}
+.showreel-ext{display:inline-block;margin-top:12px;font:10px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);text-decoration:none}
+.showreel-ext:hover{color:var(--acid)}
 .head{border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;gap:16px}
 
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 8px}
@@ -66,6 +76,11 @@ h1{font-size:clamp(50px,9vw,138px);line-height:.86;letter-spacing:-.075em;font-w
 .tags span{border:1px solid var(--line);padding:8px 10px;font:9px var(--mono);color:var(--fg)}
 .button{display:inline-block;background:var(--fg);color:var(--bg);padding:13px 16px;font:10px var(--mono);text-decoration:none}
 .button:hover{background:var(--acid)}
+.button.alt{background:none;color:var(--fg);border:1px solid var(--fg);padding:12px 15px}
+.button.alt:hover{background:var(--acid);border-color:var(--acid);color:var(--bg)}
+.about-actions{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.mails{display:flex;flex-direction:column;align-items:flex-start}
+.mails .mail+.mail{margin-top:14px}
 
 .statement{padding:120px 8vw;background:#101112;border-block:1px solid var(--line)}
 .statement p{max-width:1100px;margin:0;font-size:clamp(32px,5vw,70px);line-height:1.02;letter-spacing:-.055em}
@@ -99,9 +114,11 @@ body.lock{overflow:hidden}
   nav{gap:16px}
   .nav{padding:0 5vw}
   .logo span{display:none}
-  .hero{padding:130px 5vw 60px}
+  .hero{padding:120px 5vw 40px}
+  .showreel{padding:0 5vw 10px}
   h1{font-size:15vw}
   .work,.about,.contact{padding:90px 5vw}
+  .work{padding-top:50px}
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:45px}
   .statement{padding:90px 5vw}
   .statement p{font-size:10.5vw}
