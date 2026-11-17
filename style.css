@@ -23,7 +23,7 @@ nav a:hover,footer a:hover{color:var(--acid)}
 .hero{min-height:68vh;padding:190px 8vw 90px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
 .kicker,.head{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .hero em,.contact h2 em{font-family:Georgia,serif;font-weight:400}
-.hero p{color:var(--fg);line-height:1.16;font-size:clamp(96px,12.6vw,174px);letter-spacing:-.05em;font-weight:500;max-width:1180px;margin:42px 0 0}
+.hero p{color:var(--fg);line-height:1.16;font-size:clamp(74px,9.7vw,134px);letter-spacing:-.05em;font-weight:500;max-width:1180px;margin:42px 0 0}
 .hero .hero-text{max-width:760px;margin:24px 0 0;font-size:32px;line-height:1.75;color:#aaa79f}
 .hero .hero-actions{margin-top:48px}
 .hero-actions{display:flex;gap:28px;flex-wrap:wrap;align-items:center;position:relative;z-index:1}
@@ -115,7 +115,7 @@ body.lock{overflow:hidden}
   .logo span{display:none}
   .hero{min-height:62vh;padding:130px 5vw 65px}
   .showreel{padding:0 5vw 10px}
-  .hero p{font-size:clamp(90px,24vw,126px);line-height:1.2;margin-top:32px}
+  .hero p{font-size:clamp(69px,18.5vw,97px);line-height:1.2;margin-top:32px}
   .hero .hero-text{font-size:28px;line-height:1.65;margin-top:18px}
   .work,.about,.contact{padding:90px 5vw}
   .work{padding-top:50px}
